@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactSwipe from 'react-swipe'
+import LazyLoad from 'react-lazy-load';
 import css from "./css.sass"
 
 export default class Sections extends React.Component {
@@ -12,10 +13,13 @@ export default class Sections extends React.Component {
                   return  items.map(function(a,b){
                             return(<div className='item'>
                                         <div className='img'>
-                                            <img className='ico lazy' src={a.img_url} />
-                                                {
-                                                a.product_tag?<img className='tag lazy' src={a.product_tag} />:""
-                                                }
+                                <LazyLoad height={762} offsetVertical={300}>
+                                <img className='ico lazy' src={a.img_url} />
+                                </LazyLoad>
+                                <img  />
+                            {
+                            a.product_tag?<img className='tag lazy' src={a.product_tag} />:""
+                            }
                                         </div>
                                         <div className='info'>
                                             <div className='name'>
