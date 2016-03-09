@@ -13,7 +13,7 @@ export default class Sections extends React.Component {
                   return  items.map(function(a,b){
                             return(<div className='item'>
                                         <div className='img'>
-                                <LazyLoad height={762} offsetVertical={300}>
+                                <LazyLoad >
                                 <img className='ico lazy' src={a.img_url} />
                                 </LazyLoad>
                                 <img  />
