@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack-dev-server --devtool eval --progress --colors --hot --host 0.0.0.0 --display-error-details"
+    "build": ""
   },
   "author": "",
   "license": "ISC",
