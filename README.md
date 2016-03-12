@@ -1,4 +1,7 @@
 
+
+技术与栈： `Webpack`+`React`+`Sass`
+
 * 运行 `npm install` 安装依赖
 * 开发环境运行 `gulp` 支持热更新
 * 生产环境 `gulp pro` 生成的生产环境代码在build目录下

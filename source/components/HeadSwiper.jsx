@@ -15,6 +15,7 @@ class HeadSwiper extends React.Component {
             this.setState({
                     selectindex:index
             })
+
         }
     render() {
         var swipes=[];
@@ -32,7 +33,7 @@ class HeadSwiper extends React.Component {
         });
         return (
             <div className='HeadSwiper'>
-                <ReactSwipe  callback={this.swipechanges.bind(this)} >
+                <ReactSwipe  transitionEnd={this.swipechanges.bind(this)} auto={4000} >
                     {swipes}
                 </ReactSwipe>
                 <ul className='swipe-nav'>

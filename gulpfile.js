@@ -23,7 +23,7 @@ gulp.task("debug", function(callback) {
         contentBase:"build"
     }).listen(8080, "0.0.0.0", function(err) {
         if(err) throw new gutil.PluginError("webpack-dev-server", err);
-        else gutil.log("[webpack-dev-server]", "http://localhost:8080/build/index.html");
+        else gutil.log("[webpack-dev-server]", "http://localhost:8080");
     });
     
 });
