@@ -9,12 +9,8 @@
         bottom: 0.1rem
         left: 0
         right: 0
-        display: box
-        display: -webkit-box
-        box-align: center
-        -webkit-box-align: center
-        box-pack: center
-        -webkit-box-pack: center
+        display: flex
+        justify-content: center
         li
             width: .8em
             height: .8em
@@ -28,13 +24,11 @@
         position: relative
 
     .list
-        -webkit-transform: translate3d(0,0,0)
+        transform: translate3d(0,0,0)
         background: #FFF
         .item
-            display: box
-            display: -webkit-box
-            box-align: center
-            -webkit-box-align: center
+            display: flex
+            align-items: center
             padding: (30rem/100) 0
             border-bottom: 1px solid #F2F2F2
         .section
@@ -42,9 +36,7 @@
                 .item
                     border: none
         .info
-            -webkit-box-flex: 1
-            box-flex: 1
-            width: 100%
+            flex: 1
             margin-right: (20rem/100)
         .img
             width: (254rem/100)
